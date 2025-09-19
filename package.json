@@ -1,0 +1,45 @@
+{
+	"name": "daves-art",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"postinstall": "pnpm update",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint ."
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.3.2",
+		"@eslint/js": "^9.35.0",
+		"@sveltejs/adapter-vercel": "^5.10.2",
+		"@sveltejs/kit": "^2.42.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.0",
+		"@types/node": "^22.18.6",
+		"eslint": "^9.35.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.12.3",
+		"globals": "^16.4.0",
+		"mdsvex": "^0.12.6",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.39.2",
+		"svelte-check": "^4.3.1",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.44.0",
+		"vite": "^7.1.6",
+		"vite-plugin-devtools-json": "^1.0.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"dependencies": {
+		"@deno/svelte-adapter": "^0.1.0"
+	}
+}
